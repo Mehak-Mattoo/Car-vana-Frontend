@@ -11,7 +11,7 @@ import AlertComponent from "./Alert";
 import notesContext from "../context/Note/notesContext";
 
 function Signup(props) {
-  const host = process.env.REACT_APP_HOST;
+  const host = process.env.PRODUCTION_URL;
 
   const [credentials, setCredentials] = useState({
     userName: "",

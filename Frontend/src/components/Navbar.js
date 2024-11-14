@@ -22,7 +22,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 
 export default function Example(props) {
-  let host = process.env.REACT_APP_HOST;
+  let host = process.env.PRODUCTION_URL;
   const { mode, setMode } = props;
 
   const [openNav, setOpenNav] = React.useState(false);

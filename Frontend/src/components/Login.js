@@ -10,7 +10,7 @@ import {
 import AlertComponent from "./Alert";
 import notesContext from "../context/Note/notesContext";
 
-const host = process.env.REACT_APP_HOST;
+const host = process.env.PRODUCTION_URL;
 
 function Login(props) {
   const navigate = useNavigate();
